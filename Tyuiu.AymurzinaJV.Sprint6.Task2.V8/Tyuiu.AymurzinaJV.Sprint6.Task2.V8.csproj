@@ -10,11 +10,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.0" />
-    <PackageReference Include="ScottPlot.WinForms" Version="5.1.57" />
+    <PackageReference Include="scottplot.winforms" Version="5.1.57" />
+    <PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />
+    <PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.AymurzinaJV.Sprint6.Task1.V17.Lib\Tyuiu.AymurzinaJV.Sprint6.Task1.V17.Lib.csproj" />
+    <ProjectReference Include="..\Tyuiu.AymurzinaJV.Sprint6.Task2.V8.Lib\Tyuiu.AymurzinaJV.Sprint6.Task2.V8.Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
