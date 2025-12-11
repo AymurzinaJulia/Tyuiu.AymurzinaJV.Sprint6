@@ -10,10 +10,7 @@ namespace Tyuiu.AymurzinaJV.Sprint6.Task4.V28.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (x + 2.5 == 0)
-                {
-                    nums[count] = 0;
-                }
+                if (x + 2.5 == 0) nums[count] = 0;
                 else
                 {
                     nums[count] = Math.Round((Math.Cos(2 * x) + ((Math.Sin(x)) / (x + 2.5)) + 2 * x), 2);
@@ -22,6 +19,7 @@ namespace Tyuiu.AymurzinaJV.Sprint6.Task4.V28.Lib
                 count++;
 
             }
+          
             return nums;
         }
     }
