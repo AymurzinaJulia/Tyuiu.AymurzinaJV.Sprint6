@@ -63,9 +63,10 @@
             panelTop_AJV.Controls.Add(buttonInfo_AJV);
             panelTop_AJV.Controls.Add(buttonDone_AJV);
             panelTop_AJV.Controls.Add(buttonUpload_AJV);
-            panelTop_AJV.Location = new Point(1, 0);
+            panelTop_AJV.Dock = DockStyle.Top;
+            panelTop_AJV.Location = new Point(0, 0);
             panelTop_AJV.Name = "panelTop_AJV";
-            panelTop_AJV.Size = new Size(1082, 91);
+            panelTop_AJV.Size = new Size(1087, 91);
             panelTop_AJV.TabIndex = 0;
             // 
             // buttonSave_AJV
@@ -83,6 +84,7 @@
             // 
             // buttonInfo_AJV
             // 
+            buttonInfo_AJV.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             buttonInfo_AJV.BackgroundImage = (Image)resources.GetObject("buttonInfo_AJV.BackgroundImage");
             buttonInfo_AJV.BackgroundImageLayout = ImageLayout.Zoom;
             buttonInfo_AJV.Location = new Point(970, 11);
@@ -121,25 +123,27 @@
             // groupBoxTask_AJV
             // 
             groupBoxTask_AJV.Controls.Add(labelTask_AJV);
-            groupBoxTask_AJV.Location = new Point(1, 97);
+            groupBoxTask_AJV.Dock = DockStyle.Top;
+            groupBoxTask_AJV.Location = new Point(0, 91);
             groupBoxTask_AJV.Name = "groupBoxTask_AJV";
-            groupBoxTask_AJV.Size = new Size(1082, 99);
+            groupBoxTask_AJV.Size = new Size(1087, 99);
             groupBoxTask_AJV.TabIndex = 4;
             groupBoxTask_AJV.TabStop = false;
             groupBoxTask_AJV.Text = "Условие:";
             // 
             // labelTask_AJV
             // 
-            labelTask_AJV.AutoSize = true;
-            labelTask_AJV.Location = new Point(10, 28);
+            labelTask_AJV.Dock = DockStyle.Fill;
+            labelTask_AJV.Location = new Point(3, 23);
             labelTask_AJV.Name = "labelTask_AJV";
-            labelTask_AJV.Size = new Size(1051, 60);
+            labelTask_AJV.Size = new Size(1081, 73);
             labelTask_AJV.TabIndex = 0;
             labelTask_AJV.Text = resources.GetString("labelTask_AJV.Text");
             // 
             // splitContainer1
             // 
-            splitContainer1.Location = new Point(6, 202);
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 190);
             splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -149,50 +153,55 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(groupBoxOutput_AJV);
-            splitContainer1.Size = new Size(1077, 507);
-            splitContainer1.SplitterDistance = 527;
+            splitContainer1.Size = new Size(1087, 519);
+            splitContainer1.SplitterDistance = 531;
             splitContainer1.TabIndex = 5;
             splitContainer1.SplitterMoved += splitContainer1_SplitterMoved;
             // 
             // groupBoxIn_AJV
             // 
             groupBoxIn_AJV.Controls.Add(dataGridViewIn_AJV);
-            groupBoxIn_AJV.Location = new Point(0, 3);
+            groupBoxIn_AJV.Dock = DockStyle.Fill;
+            groupBoxIn_AJV.Location = new Point(0, 0);
             groupBoxIn_AJV.Name = "groupBoxIn_AJV";
-            groupBoxIn_AJV.Size = new Size(540, 496);
+            groupBoxIn_AJV.Size = new Size(531, 519);
             groupBoxIn_AJV.TabIndex = 10;
             groupBoxIn_AJV.TabStop = false;
             groupBoxIn_AJV.Text = "Ввод:";
             // 
             // dataGridViewIn_AJV
             // 
-            dataGridViewIn_AJV.Anchor = AnchorStyles.Left;
+            dataGridViewIn_AJV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewIn_AJV.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewIn_AJV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewIn_AJV.Location = new Point(3, 27);
+            dataGridViewIn_AJV.Dock = DockStyle.Fill;
+            dataGridViewIn_AJV.Location = new Point(3, 23);
             dataGridViewIn_AJV.Name = "dataGridViewIn_AJV";
             dataGridViewIn_AJV.RowHeadersWidth = 51;
-            dataGridViewIn_AJV.Size = new Size(521, 463);
+            dataGridViewIn_AJV.Size = new Size(525, 493);
             dataGridViewIn_AJV.TabIndex = 0;
             // 
             // groupBoxOutput_AJV
             // 
-            groupBoxOutput_AJV.Anchor = AnchorStyles.Right;
             groupBoxOutput_AJV.Controls.Add(dataGridViewOut_AJV);
-            groupBoxOutput_AJV.Location = new Point(3, 5);
+            groupBoxOutput_AJV.Dock = DockStyle.Fill;
+            groupBoxOutput_AJV.Location = new Point(0, 0);
             groupBoxOutput_AJV.Name = "groupBoxOutput_AJV";
-            groupBoxOutput_AJV.Size = new Size(540, 496);
+            groupBoxOutput_AJV.Size = new Size(552, 519);
             groupBoxOutput_AJV.TabIndex = 9;
             groupBoxOutput_AJV.TabStop = false;
             groupBoxOutput_AJV.Text = "Вывод:";
             // 
             // dataGridViewOut_AJV
             // 
-            dataGridViewOut_AJV.Anchor = AnchorStyles.Right;
+            dataGridViewOut_AJV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewOut_AJV.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridViewOut_AJV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewOut_AJV.Location = new Point(6, 24);
+            dataGridViewOut_AJV.Dock = DockStyle.Fill;
+            dataGridViewOut_AJV.Location = new Point(3, 23);
             dataGridViewOut_AJV.Name = "dataGridViewOut_AJV";
             dataGridViewOut_AJV.RowHeadersWidth = 51;
-            dataGridViewOut_AJV.Size = new Size(521, 463);
+            dataGridViewOut_AJV.Size = new Size(546, 493);
             dataGridViewOut_AJV.TabIndex = 1;
             // 
             // toolTip_AJV
@@ -214,7 +223,6 @@
             Text = "Спринт 6 | Задание 7 | Вариант 28 | Аймурзина Ю.В";
             panelTop_AJV.ResumeLayout(false);
             groupBoxTask_AJV.ResumeLayout(false);
-            groupBoxTask_AJV.PerformLayout();
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
